@@ -2,9 +2,10 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 
   // Your web app's Firebase configuration
-  const firebaseConfig = {
+  var firebaseConfig = {
     apiKey: "AIzaSyANItI0IcSYFebXAmIFo241AlhEaCV2GJE",
     authDomain: "simple-blog-true.firebaseapp.com",
+    databaseURL: "https://simple-blog-true-default-rtdb.firebaseio.com",
     projectId: "simple-blog-true",
     storageBucket: "simple-blog-true.appspot.com",
     messagingSenderId: "950931176327",
