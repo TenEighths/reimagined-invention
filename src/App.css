@@ -1,0 +1,130 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  border: none;
+  background-color: rgb(196, 222, 255);
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0px 5px rgb(102, 102, 102);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(214, 187, 153);
+}
+
+button:active {
+  box-shadow: 0px 1px rgb(102, 102, 102);
+  transform: translateY(4px);
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgba(218, 209, 209, 0.658);
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+input {
+  padding: 5px;
+}
+
+footer {
+  background-color: rgba(218, 209, 209, 0.658);
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.blog-container {
+  height: 70vh;
+  overflow: auto;
+}
+
+.blog-content {
+  overflow: auto;
+}
+
+.blog-post {
+  border: 2px solid rgba(156, 153, 153, 0.658);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+}
+
+.blog-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7px;
+  padding-top: 5px;
+}
+
+.blog-info {
+  display: flex;
+  padding-bottom: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.blog-info label {
+  margin-right: 5px;
+}
+
+.blog-comment {
+  border: 2px solid rgba(156, 153, 153, 0.658);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-comment h3 {
+  padding-left: 5px;
+  text-decoration: underline;
+}
+
+.blog-comment-item {
+  padding-left: 5px;
+  border-bottom: 2px solid rgba(156, 153, 153, 0.658);
+}
+
+.blog-comment-item:last-child {
+  padding-left: 5px;
+  border-bottom: none;
+}
+
+@media (max-width: 425px) {
+  .blog-info {
+    flex-direction: column;
+  }
+
+  .blog-info div {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+}
